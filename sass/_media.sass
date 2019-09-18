@@ -5,9 +5,39 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+	.first img
+		width: 40%
+		margin-left: 0
 
 // ≥992px
 +media-breakpoint-down(md)
+	.first
+		.sect__row	
+			flex-direction: column-reverse
+		img
+			width: 60%
+	.procedure__descr
+		.sect__row
+			flex-direction: column-reverse
+			&.sect__row--norev
+				flex-direction: column
+				margin-top: 30px
+			&--text
+				width: 100%
+		.w-30	
+			width: auto
+			margin-bottom: 30px
+	.cabinets
+		.sect__row
+			flex-direction: column
+		.acc-title
+			margin-bottom: 30px
+			margin-right: 0
+	.cabinets__row
+		justify-content: space-between
+		align-items: center
+		img
+			width: 48%
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -18,9 +48,52 @@
 		&.active
 			top: 0
 			right: 0
+	.header
+		background-position: top right
+	.header__wrap
+		align-items: flex-start
+		justify-content: center
+		padding-top: 120px
+		height: 450px
+	.first
+		h2
+			padding-left: 0
+			&:after
+				display: none
+		p
+			padding-left: 0
+		img
+			width: 100%
+	.cabinets__row
+		flex-direction: column
+		img
+			max-width: 100% !important
+			width: auto
+			height: auto
+			margin-bottom: 25px
 	
 // ≥576px
 +media-breakpoint-down(xs)
+	section
+		padding: 35px 0
+	section h2
+		font-size: 18px
+		margin-bottom: 28px
+		padding-left: 38px
+		&:after
+			width: 38px
+			left: -15px
+			top: 9px
+	.header__title
+		font-size: 48px
+	.header__title span:last-child
+		font-size: 19px
+	.procedure ol
+		padding-left: 0
+	.cabinets .acc-title
+		max-width: 320px
+		width: 100%
+		margin-bottom: 20px
 
 
 /*==========  Mobile First  ==========*/

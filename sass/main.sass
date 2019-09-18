@@ -47,6 +47,22 @@ ul,ol,li
 
 li
 	margin-bottom: 1rem
+ol
+	span
+		font-weight: bold
+ul
+	li
+		position: relative
+		padding-left: 50px
+		&:after
+			content: ''
+			display: block
+			width: 30px
+			height: 2px
+			background-color: $accent
+			position: absolute
+			top: 12px
+			left: 0	
 
 .visually-hidden
 	position: absolute
@@ -56,7 +72,7 @@ li
 	clip: rect(0 0 0 0)
 
 section
-	padding: 5vmax 0
+	padding: 3.2vmax 0
 	position: relative
 	h2
 		text-transform: uppercase
@@ -64,25 +80,28 @@ section
 		position: relative
 		font-weight: bold
 		line-height: 1.2
-		margin-bottom: 50px
-		text-align: center
+		margin-bottom: 40px
 		position: relative
-		z-index: 1
+		padding-left: 83px
 		&:after
 			content: ''
 			display: block
-			width: 100px
-			height: 100px
-			background-image: url(../img/title-bg__gray.png)
-			background-position: center
-			background-size: cover
+			width: 55px
+			height: 2px
+			background-color: $accent
 			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
-			z-index: -1
+			top: 15px
+			left: 0
 .acc-c
 	color: $accent
+.sect__row
+	display: flex
+	align-items: center
+	justify-content: space-between
+	&--text
+		width: 65%
+.gray-bg
+	background-color: $gray
 .header
 	background-size: cover
 	background-position: center	right
@@ -93,15 +112,62 @@ section
 		align-items: center
 	&__title
 		font-weight: bold
-		font-size: 75px
+		font-size: 77px
 		text-transform: uppercase
 		color: #fff
 		line-height: 1.1
 		span
 			&:last-child
-				font-size: 30px
+				font-size: 31px
 				display: block
 				font-weight: 600
+.first
+	padding: 5vmax 0
+	img
+		width: 43%
+		margin-left: -5vw
+	&__text
+		p
+			padding-left: 83px
+.procedure
+	ol
+		padding-left: 83px
+.w-30
+	width: 30%
+.sect__row--norev
+	margin-top: 40px
+.acc-title
+	border: 1px solid $accent
+	padding: 10px 20px
+	min-width: 305px
+	width: auto
+	text-align: center
+	margin-right: 55px
+	span
+		font-weight: 600
+
+.cabinets
+	h3
+		text-align: center
+		margin: 40px 0 30px
+	&__row
+		display: flex
+		justify-content: space-around
+		margin-bottom: 65px
+		&--sb
+			justify-content: space-between
+		img
+			box-shadow: 0 22px 125px rgba(#000, .2)
+			height: 100%
+	ol span
+		color: $accent
+
+
+
+.mt-25
+	margin-top: 35px
+	display: block
+	margin-bottom: 20px
 
 
 
