@@ -8,6 +8,10 @@
 	.first img
 		width: 40%
 		margin-left: 0
+	.cabinets__row img
+		max-width: 45vw !important
+	.cabinets__row--jcc img
+		max-width: 100% !important
 
 // ≥992px
 +media-breakpoint-down(md)
@@ -38,6 +42,11 @@
 		align-items: center
 		img
 			width: 48%
+	.cabinets__row--jcc
+		justify-content: center 
+		img
+			width: 100%
+			margin: 0 auto
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -71,6 +80,23 @@
 			width: auto
 			height: auto
 			margin-bottom: 25px
+	.cabinets__row.cabinets__row--nw img
+		width: auto
+	.cabinets__row--nw
+		margin-bottom: -35px
+	.cabinets__row--jcc_img
+		width: 100%
+		margin-right: 0 !important
+		margin-left: 0 !important
+		margin-bottom: 30px
+		img
+			margin-bottom: 0
+	.total img
+		margin: 20px 0 40px
+	.cabinets .acc-title
+		margin-top: 30px
+	.mt-25
+		margin-top: 0
 	
 // ≥576px
 +media-breakpoint-down(xs)
@@ -94,6 +120,8 @@
 		max-width: 320px
 		width: 100%
 		margin-bottom: 20px
+	.cabinets__row.cabinets__row--nw img
+		width: 100%
 
 
 /*==========  Mobile First  ==========*/

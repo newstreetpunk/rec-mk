@@ -147,15 +147,40 @@ section
 		font-weight: 600
 
 .cabinets
+	padding-bottom: 0
 	h3
 		text-align: center
-		margin: 40px 0 30px
+		margin: 40px 0 0
 	&__row
 		display: flex
 		justify-content: space-around
 		margin-bottom: 65px
+		margin-top: 35px
 		&--sb
 			justify-content: space-between
+		&--jcc
+			justify-content: center
+			flex-wrap: wrap
+			margin-bottom: 0
+			&_img
+				width: 47%
+				margin-bottom: 4%
+				img
+					height: auto !important
+				&:nth-child(odd)
+					margin-right: 3%
+					img
+						margin-left: auto
+				&:nth-child(even)
+					margin-left: 3%
+					img
+						margin-right: auto
+				&:last-child
+					margin-right: 0
+					margin-left: 0
+		&.cabinets__row--nw
+			img
+				width: 30%
 		img
 			box-shadow: 0 22px 125px rgba(#000, .2)
 			height: 100%
@@ -168,6 +193,20 @@ section
 	margin-top: 35px
 	display: block
 	margin-bottom: 20px
+
+.card
+	&__img
+		box-shadow: 0 22px 125px rgba(0,0,0,.2)
+		max-width: 885px
+		width: 100%
+		height: auto
+		margin: 0 auto
+		margin: 3vmax auto
+
+.total
+	img
+		box-shadow: 0 22px 125px rgba(0,0,0,.2)
+		margin: 40px 0 55px	
 
 
 
